@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran', sans-serif;
+}
+div{
+    margin: 0;
+    padding: 0;
+
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    margin: 0;
+    padding: 0;
+}
+
+.outer{
+    padding: 22px;
+}
+
+.text{
+    margin: 20px;
+}
+.text h1{
+    font-size: 49px;
+}
+.text p{
+    margin-top: -10px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* max-width: 1200px ; */
+}
+.card{
+    position: relative;
+    height:339px;
+    width: 266px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    margin: 30px 20px;
+    transition: 200ms ease-out;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 200ms ease-out;
+    cursor: pointer;
+}
+.card p{
+    position: absolute;
+    bottom: 0;
+    font-size: 36px;
+    color: white;
+    margin: 7px 8px;
+    font-weight: 500;
+}
+span{
+    color: red;
+}
+.icon{
+    font-size: 24px;
+}
+.one{
+    background-image: url('../../images/kedarnath.jpg');
+
+}
+.two{
+    background-image: url('../../images/badrinath.jpg');
+
+}
+.three{
+    background-image: url('../../images/yamunotri-dham.jpg');
+
+
+}
+.four{
+    background-image: url('../../images/Gangotri\ banner1_google\ drive.jpg');
+}
+@media (max-width:1050px) {
+    .cards{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 40%;
+    }
+}
+
+@media (max-width:700px) {
+    .outer{
+        padding: 0;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        margin: 10px;
+        height:339px;
+        width: 90%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+    
+}
