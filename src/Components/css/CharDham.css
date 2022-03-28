@@ -61,21 +61,21 @@ span{
 .icon{
     font-size: 24px;
 }
-.one{
-    background-image: url('../../images/kedarnath.jpg');
+.cards .one{
+    background-image: url('../../images/kedarnath.jpg') !important;
 
 }
-.two{
-    background-image: url('../../images/badrinath.jpg');
+.cards .two{
+    background-image: url('../../images/badrinath.jpg') !important;
 
 }
-.three{
-    background-image: url('../../images/yamunotri-dham.jpg');
+.cards .three{
+    background-image: url('../../images/yamunotri-dham.jpg') !important;
 
 
 }
-.four{
-    background-image: url('../../images/Gangotri\ banner1_google\ drive.jpg');
+.cards .four{
+    background-image: url('../../images/Gangotri\ banner1_google\ drive.jpg') !important;
 }
 @media (max-width:1050px) {
     .cards{

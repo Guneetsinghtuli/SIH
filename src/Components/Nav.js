@@ -9,7 +9,7 @@ const navTheme = {
 };
 
 const navBrand = (
-  <img className="nav-logo" src={require("../images/logo.jpg")} />
+  <img className="nav-logo" alt="logo" src={require("../images/logo.jpg")} />
 );
 
 const rightLinks = (

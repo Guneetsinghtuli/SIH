@@ -1,21 +1,25 @@
 import React from "react";
-import CharDham from "./Components/CharDham";
-import Second from "./Components/Second";
 import './App.css'
-import Third from "./Components/Third";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from "./Components/Footer";
-import Nav from "./Components/Nav";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import HomePage from "./screens/HomePage";
+import HotelPage from "./screens/HotelPage";
+import TravelPage from "./screens/TravelPage";
+
 
 const App = () => {
   return (
-    <div>
-    <Nav />
-    <Second />
-    <Third />
-      <CharDham />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route  path="/" element={<HomePage />}/>
+        <Route  path="/hotel" element={<HotelPage />}/>
+        <Route  path="/travel" element={<TravelPage />}/>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
