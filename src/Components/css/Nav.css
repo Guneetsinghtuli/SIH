@@ -1,0 +1,23 @@
+.nav-logo{
+    height: 55px;
+}
+
+.mera-span{
+    color: black !important;
+    margin: 0 6px !important;
+}
+.login{
+    color: red !important;
+}
+.icons{
+    color: red !important;
+}
+
+.main-navbar{
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.plan{
+    color: black !important;
+}

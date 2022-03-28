@@ -5,10 +5,12 @@ import './App.css'
 import Third from "./Components/Third";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./Components/Footer";
+import Nav from "./Components/Nav";
 
 const App = () => {
   return (
     <div>
+    <Nav />
     <Second />
     <Third />
       <CharDham />
