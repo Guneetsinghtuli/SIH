@@ -4,6 +4,7 @@ import Second from "./Components/Second";
 import './App.css'
 import Third from "./Components/Third";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
     <Second />
     <Third />
       <CharDham />
+      <Footer />
     </div>
   );
 };

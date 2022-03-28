@@ -1,0 +1,30 @@
+.outer-footer{
+    background-color: #EAEAEA;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.outer-footer p{
+    margin: 0;
+}
+.team{
+    padding: 10px 12px;
+}
+.love{
+    padding: 10px 12px;
+}
+span{
+    margin: 0 3px !important;
+}
+.logo img{
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
+}
+
+@media (max-width:1000px) {
+    .outer-footer{
+        flex-direction: column;
+    }
+}
