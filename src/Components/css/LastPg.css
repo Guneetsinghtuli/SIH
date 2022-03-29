@@ -1,0 +1,90 @@
+@media (min-width:1000px) {
+
+.redColorHeading{
+    font-size: 5rem;
+    color: red;
+    margin-right: 1.3rem;
+    font-weight: bold;
+}
+.heade{
+    display: flex;
+    margin-top: 1.3rem;
+    justify-items: center;
+    align-items: center;
+}
+.secondsOne{
+    display: flex;
+}
+.suggest{
+    margin: 3rem;
+}
+.suggestDown{
+    height: 300px;
+    border: 2px solid black;
+    margin: 3rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.travelBox{
+    display: flex;
+    
+
+}
+.travelSummaryPara{
+    margin: 1.3rem;
+    font-size: 1.3rem;
+}
+.logos1{
+    height: 150px;
+    width: 300px;
+}
+.firm{
+    min-width: 500px;
+    
+}
+}
+@media (max-width:1000px) {
+    .logos1{
+        height: 150px;
+        width: 200px;
+    }
+    .redColorHeading{
+        font-size: 3rem;
+        color: red;
+        margin-right: 1.1rem;
+        font-weight: bold;
+    }
+    .heade{
+        display: flex;
+        margin-top: 1.3rem;
+        justify-items: center;
+        align-items: center;
+    }
+    .secondsOne{
+        display: flex;
+    }
+    .suggest{
+        margin: 3rem;
+    }
+    .suggestDown{
+        height: 300px;
+        border: 2px solid black;
+        margin: 1rem;
+        border-radius: 10px;
+        padding: 2rem;
+    }
+    .travelBox{
+        display: flex;
+        
+    
+    }
+    .travelSummaryPara{
+        margin: 1.3rem;
+        font-size: 1.3rem;
+    }
+    .firm{
+        min-width: 200px;
+        
+    }
+
+}
