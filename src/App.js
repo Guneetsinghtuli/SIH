@@ -12,6 +12,10 @@ import HotelPage from "./screens/HotelPage";
 import HomestaySupport from "./screens/HomestaySupport";
 import FoodexperiencePage from "./screens/FoodexperiencePage";
 import TravelPage from "./screens/TravelPage";
+import Governmentstays from "./Components/Governmentstays";
+import Governmentpage from "./screens/Governmentpage";
+import Travel2 from "./screens/Travel2page";
+import Travel2page from "./screens/Travel2page";
 
 
 
@@ -24,6 +28,8 @@ const App = () => {
         <Route  path="/homestay" element={<HomestaySupport />}/>
         <Route  path="/food" element={<FoodexperiencePage />}/>
         <Route  path="/travel" element={<TravelPage />}/>
+        <Route  path="/govtstay" element={<Governmentpage />}/>
+        <Route  path="/travel2" element={<Travel2page/>}/>
       </Routes>
     </BrowserRouter>
   );
