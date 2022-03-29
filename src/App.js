@@ -9,6 +9,10 @@ import {
 import HomePage from "./screens/HomePage";
 import HotelPage from "./screens/HotelPage";
 import TravelPage from "./screens/TravelPage";
+import Governmentstays from "./Components/Governmentstays";
+import Governmentpage from "./screens/Governmentpage";
+import Travel2 from "./screens/Travel2page";
+import Travel2page from "./screens/Travel2page";
 
 
 const App = () => {
@@ -18,6 +22,8 @@ const App = () => {
         <Route  path="/" element={<HomePage />}/>
         <Route  path="/hotel" element={<HotelPage />}/>
         <Route  path="/travel" element={<TravelPage />}/>
+        <Route  path="/govtstay" element={<Governmentpage />}/>
+        <Route  path="/travel2" element={<Travel2page/>}/>
       </Routes>
     </BrowserRouter>
   );
