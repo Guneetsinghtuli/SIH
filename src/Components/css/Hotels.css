@@ -1,3 +1,8 @@
+.select-hotel{
+    color: rgb(252, 174, 174);
+    transition: 200ms ease-in;
+}
+
 .hotel-outer{
     margin: 40px 0 ;
     padding: 30px;

@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./css/third.css";
 import Dropdown from "react-bootstrap/Dropdown";
+import BudgetContext from "../context/budgetContext";
 
 export const Third = () => {
+
+  const [location, setlocation] = useState('Where ?')
+
+  const context = useContext(BudgetContext);
+  const {budget,setbudget} = context;
+
   return (
     <div className="secondFlex">
       <div>
@@ -21,33 +28,33 @@ export const Third = () => {
           <div>
             <Dropdown id="first">
               <Dropdown.Toggle variant="Secondary" id="dropdown-basic">
-                Where ?
+                {location}
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Rishikesh</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Haridwar</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Nainital</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Kedarnath</Dropdown.Item>
+                <Dropdown.Item href="#/action-1" onClick={()=>{setlocation('Rishikesh')}}>Rishikesh</Dropdown.Item>
+                <Dropdown.Item href="#/action-2" onClick={()=>{setlocation('Haridwar')}}>Haridwar</Dropdown.Item>
+                <Dropdown.Item href="#/action-3" onClick={()=>{setlocation('Nainital')}}>Nainital</Dropdown.Item>
+                <Dropdown.Item href="#/action-3" onClick={()=>{setlocation('Kedarnath')}}>Kedarnath</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
           <div>
             <Dropdown id="second">
               <Dropdown.Toggle variant="Primary" id="dropdown-basic">
-                Your Budget
+                {budget}
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">0 - 10,000</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">10,000 - 20,000</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">20,000 - 30,000</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">30,000 + </Dropdown.Item>
+                <Dropdown.Item href="#/action-1" onClick={()=>{setbudget('10000')}}>0 - 10,000</Dropdown.Item>
+                <Dropdown.Item href="#/action-2" onClick={()=>{setbudget('20000')}}>10,000 - 20,000</Dropdown.Item>
+                <Dropdown.Item href="#/action-3" onClick={()=>{setbudget('30000')}}>20,000 - 30,000</Dropdown.Item>
+                <Dropdown.Item href="#/action-3" onClick={()=>{setbudget('40000')}}>30,000 + </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
         </div>
-        <button className="ThirdButton">Submit</button>
+        <button className="ThirdButton" onClick={()=>{window.scrollTo({top:1485,behavior:"smooth"})}}>Next Step</button>
       </div>
     </div>
   );

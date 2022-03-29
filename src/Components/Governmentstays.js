@@ -1,27 +1,25 @@
-// import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import React from 'react'
+import BudgetContext from "../context/budgetContext";
 import govtstay1 from '../images/govstay1.jpg';
 import govstay2 from '../images/govstay2.jpg';
 import govt3 from '../images/govt3.png';
-// const Homestay = () => {
-//   return (
-//     <div>Homestay</div>
-//   )
-// }
 
-// export default Homestay
 import "./css/Governmentstays.css";
 
 const Governmentstays = () => {
-//   const [hotels, sethotels] = useState([]);
-//   const navigate = useNavigate()
-//   useEffect(() => {
-//     fetch("http://sub-g.herokuapp.com/getHotels").then(async (data) => {
-//       let dat = await data.json();
-//       const slicedArray = dat.hotels.slice(0, 3);
-//       sethotels(slicedArray);
-//     });
-//   }, []);
+
+  const context = useContext(BudgetContext);
+  const {budget,setbudget} = context;
+
+
+  const change = (price)=>{
+
+    let pri = 4 * parseInt(price)
+    let bud = parseInt(budget)
+    let cal = bud - pri;
+    setbudget(cal)
+  }
 
   return (
     <div className="hotel-outer">
@@ -31,8 +29,6 @@ const Governmentstays = () => {
       </div>
 
       <div className="hotel-list">
-        {/* {hotels.map((element, key) => { */}
-          {/* return ( */}
             <div className="hotel">
               <div className="image-container">
               <img  alt="homestay" src={govtstay1} />
@@ -50,7 +46,7 @@ const Governmentstays = () => {
                       <p>3.9 star</p>
                     </div>
                     <div className="price-book">
-                      <p>₹1000</p>
+                      <p onClick={()=>change()}>1000</p>
                       <div className="hotel-btn">
                         <button>Select This</button>
                         <button >Know More</button>
@@ -77,7 +73,7 @@ const Governmentstays = () => {
                       <p>3.9 star</p>
                     </div>
                     <div className="price-book">
-                      <p>₹1200</p>
+                      <p onClick={()=>change()}>1200</p>
                       <div className="hotel-btn">
                         <button>Select This</button>
                         <button >Know More</button>
@@ -104,7 +100,7 @@ const Governmentstays = () => {
                       <p>4.3 star</p>
                     </div>
                     <div className="price-book">
-                      <p>₹1100</p>
+                      <p onClick={()=>change()}>1100</p>
                       <div className="hotel-btn">
                         <button>Select This</button>
                         <button >Know More</button>
