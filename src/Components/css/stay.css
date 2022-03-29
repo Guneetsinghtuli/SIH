@@ -1,0 +1,169 @@
+
+
+@media only screen and (min-width: 1000px){
+    .midlee{
+        display: flex;
+        flex-direction: column;
+    }
+
+.stayHeading1{
+    margin: 2rem 0 1rem 4rem;
+    font-size: 2.8rem;
+    font-weight: lighter;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+}
+.stayHeading2{
+    margin: 0 0 1rem 4rem;
+    font-size: 2.8rem;
+    font-weight: lighter;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    
+}
+.stayMain{
+    background-color: #083375;
+    height: 2000px;
+}
+.staySecondHeading{
+    margin: 2rem 0rem 2rem 6rem;
+    font-size: 2.6rem;
+}
+.staySecondSpan{
+    color: red;
+    margin-right: 1.2rem;
+}
+.nextSpan{
+    color: black;
+
+}
+.staySecondFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    /* width: 70%; */
+    margin: 3rem 10rem ;
+}
+.persons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 96%;
+    margin: 0.4rem;
+}
+.staySecondImages1{
+    background-color: white;
+    margin: 2%;
+    border: 2px solid black;
+    border-radius: 10px;
+   
+}
+.reducedCost1 {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1% 1.7%;
+    font-size: 15px;
+    
+    margin: 0 1em 0.8em 1.6em;
+}
+.reducedCost2 {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1% 1.9%;
+    font-size: 15px;
+    margin: 0 1em 1em 0.8em;
+}
+.boxx{
+    display: flex;
+
+}
+.staySecondHome{
+    margin: 1.2em 1em 1em 1em;
+    padding: 1.1% 1.9% 1.1% 1%;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+}
+
+
+@media only screen and (min-width: 270px) and (max-width: 1000px){
+    .midlee{
+        display: flex;
+        flex-direction: column;
+        margin: 10rem;
+    }
+    .stayMain{
+        background-color: #083375;
+        height: 6200px;
+    }
+
+    .staySecondFlex{
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        /* width: 70%; */
+        margin: 2rem 1rem ;
+    }
+    .persons{
+        
+        height: 60%;
+        width: 96%;
+        margin: 0.4rem;
+        object-fit: cover;
+    }
+    .reducedCost1 {
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 1% 1.3%;
+        font-size: 0.85rem;
+        
+        margin: 1rem 1em 1em 1em;
+    }
+    .reducedCost2 {
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 1% 1.3%;
+        font-size: 0.85rem;
+        margin: 2rem 1em 1em 0.8em;
+    }
+
+    .staySecondHome{
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    .staySecondImages1{
+        background-color: white;
+        border-radius: 10px;
+        height: 70%;
+        margin: 36rem 0;
+    
+       
+    }
+    
+    .stayHeading1{
+        margin: 1rem 0 1.5rem 2rem;
+        font-size: 2.4rem;
+        font-weight: lighter;
+        font-family: 'Fredoka One', cursive;
+        
+    }
+    .stayHeading2{
+        margin: 0 0 1rem 2rem;
+        font-size: 2.4rem;
+        font-weight: lighter;
+        font-family: 'Fredoka One', cursive;
+        
+        
+    }
+    .staySecondHeading{
+        margin: 2rem 0rem 2rem 2rem;
+        font-size: 2.1rem;
+    }
+    .staySecondSpan{
+        color: red;
+        margin-right: 1.2rem;
+    }
+}
