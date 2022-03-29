@@ -1,0 +1,96 @@
+.inner-card{
+    width: 253px;
+    height: 256px;
+    background-size: cover;
+    background-position: 50%;
+}
+.stay .main-card .one{
+background-image: url('../../images/homestay\(1\).jpg');
+
+}
+.stay .main-card .two{
+    background-image: url('../../images/hotel.jpeg');
+    
+}
+.stay .main-card .three{
+    background-image: url('../../images/govtHotel.jpeg');
+}
+.package-outer{
+    background-color: #083375;
+    padding: 30px;
+}
+
+.travel .main-card .one{
+    background-image: url('../../images/taxi.jpeg');
+}
+.travel .main-card .two{
+    background-image: url('../../images/bike.jpeg');
+}
+.travel .main-card .three{
+    background-image: url('../../images/auto.jpeg');
+}
+
+.package-outer h1{
+    color: white;
+}
+.main-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.all-features{
+    display: flex;
+    margin: 5px;
+}
+.feature{
+    border: 2px solid black;
+    margin: 2px 5px;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 600;
+
+}
+.outer-card{
+    background-color: white;
+    padding: 8px 6px;
+    border-radius: 5px;
+    margin: 12px;
+}
+.head{
+    margin: 12px 0;
+}
+
+.head p{
+    font-size: 39px;
+    color: white;
+}
+
+.travel, .stay, .food{
+    padding: 10px 30px;
+}
+.main-heading{
+    margin: 30px 0;
+}
+.outer-card h2{
+    margin: 8px ;
+}
+.outer-card:hover{
+    transform: scale(1.1);
+    transition: 200ms ease-in-out;
+}
+
+@media (max-width:950px) {
+    .stay .main-card{
+        overflow-x: scroll;
+    }
+    .travel .main-card{
+        overflow-x: scroll;
+    }
+    .food .main-card{
+        overflow-x: scroll;
+    }
+    .main-card{
+        justify-content: flex-start;
+    }
+}
